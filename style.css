@@ -51,7 +51,7 @@ width: 500px;
     width: 100%;
     background-image: url("./fistbump.jpeg");
     background-size: cover;
-    background-position: center center;
+    background-position: 75% 75%;
     background-repeat: no-repeat;
     background-attachment: center;
     color: whitesmoke; 

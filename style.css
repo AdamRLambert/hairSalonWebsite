@@ -1,0 +1,71 @@
+.container {  display: grid;
+ grid-template-areas:
+    "logo"
+    "nav"
+    "pics"
+    "info"
+    "titles"
+    "footer";
+  }
+  
+  .logo { grid-area: logo; }
+  .nav { grid-area: nav; }
+  .pics { grid-area: pics; }
+  .info { grid-area: info; }
+  .titles {grid-area: titles}
+  .footer { grid-area: footer; }
+  
+  
+  html, body , {
+    height: 100%;
+    margin: 0;
+  }
+
+
+
+.logo {
+    text-align: center;
+    font-family:  'Press Start 2P', cursive;
+    font-size: 40px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    text-decoration: underline;
+}
+.pics {
+    
+    background-image: url(fistbump.jpeg);
+    background-size: cover;
+    /* background-attachment: fixed; */
+    /* height: 750px; */
+    width: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* text-size-adjust: auto; */
+    font-size: 40px;
+    color: whitesmoke;
+    
+}
+@media (min-width: 576px) {
+    .pics {
+    background-image: url(fistbump.jpeg);
+    background-size: contain;
+    height: 750px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* text-size-adjust: auto; */
+    font-size: 40px;
+    color: whitesmoke;
+    
+}
+}
+/* .info{ */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+/* } */

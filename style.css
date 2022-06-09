@@ -1,3 +1,5 @@
+/* style="background-image: url(fistbump.jpeg); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;" */
+
 .container {  display: grid;
  grid-template-areas:
     "logo"
@@ -21,36 +23,74 @@
     margin: 0;
   }
 
+  .info > img {
+      height: 200px;
+      width: 400px;
+  }
 
 
 .logo {
-    text-align: center;
+    text-align: left;
     font-family:  'Press Start 2P', cursive;
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
+
+    
     font-size: 20px;
     text-decoration: underline;
 }
-.pics {
-    
-    background-image: url(fistbump.jpeg);
+ .pics { 
+    background-image: url("./fistbump.jpeg");
     background-size: cover;
-    /* background-attachment: fixed; */
-    /* height: 750px; */
-    width: 80%;
-    background-position: center;
+    width: 80%; 
+    background-position: top center;
     background-repeat: no-repeat;
-    /* text-size-adjust: auto; */
-    font-size: 40px;
-    color: whitesmoke;
-    
+    background-attachment: fixed;
+    color: whitesmoke; 
+   
+ }
+
+.learn {
+    position: absolute;
+    top: 59%;
+    left: 20%;
+    transform: translate( -50%, -50% );
+    text-align: left;
 }
-@media (min-width: 576px) {
+
+
+
+
+.info {display: flex;
+    align-items: center;
+    justify-items: space-around;
+
+
+}
+
+
+
+
+
+/* @media (min-width: 576px) {
+
+    .logo {
+        text-align: center;
+        font-family:  'Press Start 2P', cursive;
+        font-size: 40px;
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 20px;
+        text-decoration: underline;
+    }
+
     .pics {
     background-image: url(fistbump.jpeg);
     background-size: contain;
@@ -58,12 +98,11 @@
     width: auto;
     background-position: center;
     background-repeat: no-repeat;
-    /* text-size-adjust: auto; */
     font-size: 40px;
     color: whitesmoke;
     
 }
-}
+} */
 /* .info{ */
     /* display: flex; */
     /* align-items: center; */

@@ -1,6 +1,8 @@
 /* style="background-image: url(fistbump.jpeg); background-size: cover; background-position: center center; background-repeat: no-repeat; background-attachment: fixed;" */
 
-.container {  display: grid;
+.container {  
+display: grid;
+width: 500px;
  grid-template-areas:
     "logo"
     "nav"
@@ -23,6 +25,8 @@
     margin: 0;
   }
 
+
+
   .info > img {
       height: 200px;
       width: 400px;
@@ -43,12 +47,13 @@
     text-decoration: underline;
 }
  .pics { 
+    height: 500px;
+    width: 100%;
     background-image: url("./fistbump.jpeg");
     background-size: cover;
-    width: 80%; 
-    background-position: top center;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: center;
     color: whitesmoke; 
    
  }
@@ -64,7 +69,9 @@
 
 
 
-.info {display: flex;
+.info {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-items: space-around;
 

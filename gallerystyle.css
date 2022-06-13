@@ -4,13 +4,15 @@
         "logo"
         "nav"
         "results"
-        "gallery";    
+        "gallery"
+        "footer";    
 }
 
 .logo { grid-area: logo; }
 .nav { grid-area: nav ;}
 .results { grid-area: results; }
 .gallery { grid-area: gallery; }
+.footer { grid-area: footer;}
 
 .logo {
     text-align: center;
@@ -31,19 +33,54 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .players {
     text-align: center;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
-/* .players > img {
-        border: 3px black;
-    } */
-
-    .footer {
+ .footer {
         background-color: black;
         color: whitesmoke;
         text-align: center;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+
+    @media (min-width: 768px) {
+
+        .container {  
+            display: grid;
+                grid-template-areas:
+                "logo logo"
+                "nav nav"
+                "results results"
+                "gallery"
+                "footer footer"
+        
+            }
+            #gallery {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media (min-width: 992px) {
+
+                .container {  
+                    display: grid;
+                        grid-template-areas:
+                        "logo logo logo"
+                        "nav nav nav"
+                        "results results results"
+                        "gallery"
+                        "footer footer footer"
+                
+                    }
+                    #gallery {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr;
+                    }

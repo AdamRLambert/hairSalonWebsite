@@ -6,7 +6,6 @@ display: grid;
     "nav"
     "pics"
     "info"
-    "titles"
     "footer";
   }
   
@@ -14,7 +13,6 @@ display: grid;
   .nav { grid-area: nav; }
   .pics { grid-area: pics; }
   .info { grid-area: info; }
-  .titles {grid-area: titles}
   .footer { grid-area: footer; }
   
   
@@ -46,28 +44,23 @@ display: grid;
     background-attachment: center;
     color: whitesmoke; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
  }
 
- .learn {
+.learn {
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-decoration: underline;
 }
  
-.learn > img {
+.learn img {
     height: 200px;
     width: 400px;
     margin-top: 25px;
     border: 3px solid black;
 }
 
-.learn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: space-around;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-decoration: underline;
-    
-}
 
 .footer {
     background-color: black;
@@ -82,15 +75,13 @@ display: grid;
 
     .container {  
         display: grid;
-        /* width: 500px; */
-         grid-template-areas:
-            "logo"
-            "nav"
-            "pics"
+        grid-template-areas:
+            "logo logo"
+            "nav nav"
+            "pics pics"
             "info"
-            "titles"
-            "footer"; 
-        }
+            "footer footer"; 
+    }
 
     .logo {
         text-align: center;
@@ -115,24 +106,32 @@ display: grid;
     background-repeat: no-repeat;
     font-size: 40px;
     color: whitesmoke;
+    text-align: left;
     }
 
-    .learn {
-    text-align: center;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
+    #info {
+    display: grid;
+    grid-template-columns: 1fr;
     }
-
-    
-
-
-
-    }
-
-
-
-
-
 
 }
+
+@media (min-width: 992px) {
+
+    .container {  
+        display: grid;
+        grid-template-areas:
+            "logo logo logo"
+            "nav nav nav"
+            "pics pics pics"
+            "info"
+            "footer footer footer"; 
+         }
+
+    #info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+
+    

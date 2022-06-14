@@ -50,12 +50,80 @@ img {max-width: 100%;}
 
 h3 {text-decoration: underline;}
 
+.dptext {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: auto;
+   
+}
+
+.footsies {
+    margin-top: 10px;
+  
+    
+}
+.foottext {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+.frames {
+    margin-top: 20px;
+    
+
+}
+
+.frametext {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
 .footer {
     background-color: black;
     color: whitesmoke;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 10px;
+}
+
+
+@media (min-width: 768px) {
+
+    .container {
+        display: grid;
+        grid-template-areas: 
+    "logo logo"
+    "nav nav"
+    "blog blog"
+    "dptext dp"
+    "footsies foottext"
+    "frametext frames"
+    "footer footer"
+}
+
+.dptext {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: auto;
+   
+}
+
+.foottext {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+.frametext {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
 }
 
 @media (min-width: 992px) {

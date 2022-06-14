@@ -4,7 +4,12 @@
     "logo"
     "nav"
     "blog"
-    "info"
+    "dp"
+    "dptext"
+    "footsies"
+    "foottext"
+    "frames"
+    "frametext"
     "footer"
     }
 
@@ -12,13 +17,15 @@
 .nav {grid-area: nav;}
 .blog {grid-area: blog;}
 .info {grid-area: info;}
-.footer {grid-area: footer;}
-/* .learn {grid-area: learn;}
-.learn2 {grid-area: learn2;}
+.dp {grid-area: dp;}
 .footsies {grid-area: footsies;}
-.footsies2 {grid-area: foosties2;}
-.frames {grid area: frames;}
-.frames2 {grid area: frames2;} */
+.frames {grid area: frames}
+.dptext {grid-area: dptext;}
+.foottext {grid-area: foottext;}
+.frametext {grid-area: frametext;}
+.footer {grid-area: footer;}
+img {max-width: 100%;}
+
 
 .logo {
     text-align: center;
@@ -69,54 +76,28 @@ h3 {text-decoration: underline;}
 
 @media (min-width: 992px) {
 
-    /* .container {  
+    .container {
         display: grid;
-        grid-template-columns: 3fr;
-        grid-template-rows: 3fr;
-            grid-template-areas:
-            "logo logo logo"
-            "nav nav nav"
-            "blog blog blog"
-            "learn learn2 ."
-            "footsies2 footsies ."
-            "frames frames2 ."
-            "footer footer footer";
-    } */
-
-    /* .info {
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 
-        "learn learn2"
-        "footsies2 footsies"
-        "frames frames2"
-        ;
-    } */
+    "logo logo logo"
+    "nav nav nav"
+    "blog blog blog"
+    "dp dptext dptext"
+    "footsies foottext foottext"
+    "frames frametext frametext"
+    "footer footer footer"
+}
 
-    /* .container {
-        display: grid;
-        grid-template-columns: 2fr;
-        grid-template-rows: 3fr;
-        grid-template-areas: 
-        "logo logo logo"
-        "nav nav nav"
-        "blog blog blog"
-        "info"
-        "footer footer footer";
-              
-    } */
 
-    .learn div {
-        display: grid
-        
-        
-        
-    }
+    h3 {text-align: center;}
+    p {text-align: center;}
+    a {display: block;
     
-    
-
-
 
 
 }
+    
+
+
+
+

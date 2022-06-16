@@ -1,0 +1,29 @@
+.logo {
+    text-align: center;
+    font-family:  'Press Start 2P', cursive;
+    font-size: 40px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.ken {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+.questions {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    

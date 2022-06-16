@@ -32,6 +32,9 @@ display: grid;
     font-size: 20px;
     text-decoration: underline;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    width: 80%;
+    margin: 0 auto;
 }
  
 .pics { 
@@ -45,6 +48,7 @@ display: grid;
     color: whitesmoke; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    margin-top: 50px;
  }
 
 .learn {
@@ -69,7 +73,7 @@ display: grid;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
+a {color: whitesmoke;}
 
 @media (min-width: 768px) {
 

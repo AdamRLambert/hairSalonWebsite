@@ -92,7 +92,7 @@ h3 {text-decoration: underline;}
     margin-top: 10px;
 }
 
-a {color: whitesmoke;}
+/* footer > a {color: whitesmoke;} */
 
 @media (min-width: 768px) {
 
